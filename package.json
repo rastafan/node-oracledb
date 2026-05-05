@@ -37,7 +37,8 @@
     "test": "mocha --config test/opts/.mocharc.yaml",
     "posttest": "node test/opts/version.js",
     "buildbinary": "node package/buildbinary.js",
-    "buildpackage": "node package/buildpackage.js"
+    "buildpackage": "node package/buildpackage.js",
+    "prepare": "git submodule update --init"
   },
   "engines": {
     "node": ">=14.17"
