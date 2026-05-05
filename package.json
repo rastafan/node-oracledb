@@ -38,7 +38,7 @@
     "posttest": "node test/opts/version.js",
     "buildbinary": "node package/buildbinary.js",
     "buildpackage": "node package/buildpackage.js",
-    "preinstall": "git submodule update --init"
+    "preinstall": "test -f odpi/include/dpi.h || git clone https://github.com/oracle/odpi.git odpi"
   },
   "engines": {
     "node": ">=14.17"
