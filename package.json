@@ -38,7 +38,7 @@
     "posttest": "node test/opts/version.js",
     "buildbinary": "node package/buildbinary.js",
     "buildpackage": "node package/buildpackage.js",
-    "prepare": "git submodule update --init"
+    "preinstall": "git submodule update --init"
   },
   "engines": {
     "node": ">=14.17"
